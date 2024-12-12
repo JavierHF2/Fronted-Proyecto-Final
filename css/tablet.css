@@ -1,0 +1,110 @@
+@media screen and (max-width:768px) {
+
+    /*------------------------ HOME ------------------------*/
+
+    header {
+        position: relative;
+    }
+
+    .logoheader {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
+
+    #icono_menu {
+        display: block;
+        color: var(--azul);
+        font-size: 30px;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        list-style: none;
+        position: absolute;
+        background-color: var(--azul);
+        top: 100%;
+        left: -100%;
+        z-index: 100;
+        transition: all 0.2s linear;
+    }
+
+    .abrir_menu {
+        left: 0;
+    }
+
+    header nav ul li {
+        background-color: var(--violeta);
+
+    }
+
+    header nav ul li a {
+        display: inline-block;
+        color: var(--blanco);
+        text-decoration: none;
+        padding: 10px;
+        width: 100%;
+    }
+
+    header nav ul li a:hover {
+        color: var(--azul);
+    }
+
+    /*------------------------ HOW CAN WE HELP YOU ------------------------*/
+
+    .inptamaño {
+        max-width: 400px;
+        text-align: center;
+    }
+
+    /*------------------------ TESTIMONIALS ------------------------*/
+
+    #carousel {
+        max-width: 300px;
+    }
+
+    .slide {
+        min-width: 100%;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .persona_info {
+        width: 100%;
+    }
+
+    .persona figure {
+        width: 120px;
+        margin: auto;
+    }
+
+    .back {
+        top: 45%;
+        left: -15%;
+    }
+
+    .forward {
+        top: 45%;
+        right: -15%;
+    }
+
+    /*------------------------ FOOTER ------------------------*/
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footerlogo {
+        margin-bottom: 20px;
+    }
+
+    .footerlogo figure {
+        margin: auto;
+    }
+}

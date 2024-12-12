@@ -1,0 +1,97 @@
+@media screen and (max-width:430px) {
+
+    /*------------------------ HOME ------------------------*/
+    header {
+        position: relative;
+    }
+
+    .logoheader {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
+
+    #icono_menu {
+        display: block;
+        color: var(--azul);
+        font-size: 30px;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        list-style: none;
+        position: absolute;
+        background-color: var(--azul);
+        top: 100%;
+        left: -100%;
+        z-index: 100;
+        transition: all 0.2s linear;
+    }
+
+    .abrir_menu {
+        left: 0;
+    }
+
+    header nav ul li {
+        background-color: var(--violeta);
+
+    }
+
+    header nav ul li a {
+        display: inline-block;
+        color: var(--blanco);
+        text-decoration: none;
+        padding: 10px;
+        width: 100%;
+    }
+
+    header nav ul li a:hover {
+        color: var(--azul);
+    }
+
+    /*------------------------ ABOUT US ------------------------*/
+
+    .zona2_articulo {
+        width: 400px;
+        height: 400px;
+        text-align: center;
+    }
+
+    /*------------------------ HOW TO HELP YOU ------------------------*/
+
+    .parallax1 {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 45%, 0% 45%);
+    }
+
+    .parallax2 {
+        clip-path: polygon(0% 55%, 100% 55%, 100% 100%, 0% 100%);
+    }
+
+    .info_parallax1 {
+        top: 5%;
+        left: 3%;
+    }
+
+    .info_parallax2 {
+        bottom: 5%;
+        right: 3%;
+    }
+
+    /*------------------------ OUR ADVICE ------------------------*/
+
+    .zona5_atitulo {
+        width: 400px;
+        text-align: center;
+    }
+
+    .zona5_acontenido {
+        width: 400px;
+        text-align: center;
+    }
+
+}
